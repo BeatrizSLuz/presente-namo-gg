@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Dia dos Namorados ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Quicksand',sans-serif;
+    background:#0d0d0d;
+    color:#f5f5f5;
+    overflow-x:hidden;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h1,h2{
+    font-family:'Poppins',sans-serif;
+    color:#d4af37;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+    url("foto-capa.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:3px solid #d4af37;
+    box-shadow:0 0 30px rgba(212,175,55,.4);
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:15px;
+    max-width:850px;
+    margin:auto;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:3.5rem;
+}
+
+.hero p{
+    max-width:650px;
+    margin-top:15px;
+    color:#ddd;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 35px;
+    background:#8b0000;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.4s;
+    border:1px solid #d4af37;
+}
+
+.btn:hover{
+    background:#b30000;
+    transform:translateY(-4px);
+}
+
+.contador{
+    text-align:center;
+}
+
+.tempo{
+    margin-top:20px;
+    font-size:2rem;
+    color:#d4af37;
+}
+
+.card,
+.carta,
+.motivo{
+    background:#161616;
+    border:1px solid rgba(212,175,55,.25);
+    box-shadow:0 0 20px rgba(212,175,55,.08);
+}
+
+.card{
+    padding:12px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+}
+
+.card img{
+    width: 260px;;
+    border-radius:15px;
+}
+
+.card p{
+    margin-top:100px;
+    text-align:center;
+}
+
+.carta{
+    max-width:800px;
+    margin:auto;
+    padding:40px;
+    border-radius:20px;
+    line-height:1.9;
+}
+
+.motivo{
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.motivo:hover{
+    transform:scale(1.05);
+}
+
+.final{
+    text-align:center;
+}
+
+.final button{
+    padding:15px 35px;
+    background:#8b0000;
+    color:white;
+    border:none;
+    border-radius:50px;
+    margin-top:25px;
+    cursor:pointer;
+    border:1px solid #d4af37;
+    transition:.3s;
+}
+
+.final button:hover{
+    background:#b30000;
+}
+
+#mensagem{
+    margin-top:20px;
+    color:#d4af37;
+    font-size:1.2rem;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    color:#999;
+}
+
+.coracao{
+    position:fixed;
+    color:#8b0000;
+    opacity:.4;
+    animation:subir 6s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+    }
+
+    to{
+        transform:translateY(-150px);
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <!-- Troque pela sua foto -->
+    <img src="villaamor.jpeg" alt="Nós dois">
+
+    <h1>Germina & Germino ❤️</h1>
+
+    <p>
+        Mais um dia dos namorados ao seu lado.
+    </p>
+
+    <a href="#historia" class="btn">Um pouco de nós.</a>
+</section>
+
+<section class="contador" id="historia">
+    <h2>Estamos juntos há...</h2>
+    <div class="tempo" id="contador"></div>
+</section>
+
+<section>
+    <h2 style="text-align:center;margin-bottom:40px;">Nossas Memórias 📸</h2>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img src="umdiaantes.jpeg">
+            <p>Um dia antes do pedido...</p>
+        </div>
+
+        <div class="card">
+            <img src="festaanalaura2023.jpeg">
+            <p>A gente no auge da separação</p>
+        </div>
+
+        <div class="card">
+            <img src="formatura.jpeg">
+            <p>Compartilhando conquistas</p>
+        </div>
+
+        <div class="card">
+            <img src="mozao.jpeg">
+            <p>Bestando juntos</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="carta">
+        <h2>Para Você 💌</h2>
+
+        <p>
+            Desde que você chegou, os dias ficaram mais leves,
+            os momentos mais bonitos e os sonhos mais especiais.
+            Obrigada por ser meu porto seguro, meu melhor amigo
+            e meu amor favorito.
+        </p>
+
+        <br>
+
+        <p>
+            Espero viver muitos capítulos ao seu lado e criar
+            milhares de novas memórias. ❤️
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center;margin-bottom:40px;">
+        Motivos Pelos Quais Eu Te Amo
+    </h2>
+
+    <div class="motivos">
+
+        <div class="motivo">❤️ Seu sorriso galanteador</div>
+        <div class="motivo">❤️ Seu abraço apertado</div>
+        <div class="motivo">❤️ Seu jeito maluco de ser</div>
+        <div class="motivo">❤️ Nossas conversas cultas</div>
+        <div class="motivo">❤️ Seu cuidado incessável</div>
+        <div class="motivo">❤️ A pessoa que é você</div>
+
+    </div>
+</section>
+
+<section class="final">
+    <h2>
+        Se eu pudesse escolher novamente,
+        escolheria você em todas as versões da minha vida.
+    </h2>
+
+    <button onclick="mostrarMensagem()">
+        💖 Clique Aqui
+    </button>
+
+    <div id="mensagem"></div>
+</section>
+
+<footer>
+    Feito com amor ❤️
+</footer>
+
+<script>
+
+// DATA DO INÍCIO DO NAMORO
+const dataNamoro = new Date("2023-11-11");
+
+function atualizarContador(){
+
+    const hoje = new Date();
+
+    const diferenca = hoje - dataNamoro;
+
+    const dias = Math.floor(diferenca / (1000*60*60*24));
+
+    const horas = hoje.getHours();
+    const minutos = hoje.getMinutes();
+    const segundos = hoje.getSeconds();
+
+    document.getElementById("contador").innerHTML =
+    `${dias} dias • ${horas}h • ${minutos}min • ${segundos}s`;
+}
+
+setInterval(atualizarContador,1000);
+
+function mostrarMensagem(){
+    document.getElementById("mensagem").innerHTML =
+    "Eu te amo mais do que consigo expressar em palavras ou em gestos. Mas em nome desse sentimento,tentei algo que espero que goste. O quadro  O Beijo espera ser montado...❤️";
+}
+
+// corações flutuando
+setInterval(() => {
+
+    const coracao = document.createElement("div");
+
+    coracao.classList.add("coracao");
+
+    coracao.innerHTML = "❤";
+
+    coracao.style.left = Math.random()*100+"vw";
+
+    coracao.style.fontSize =
+    Math.random()*20 + 15 +"px";
+
+    document.body.appendChild(coracao);
+
+    setTimeout(()=>{
+        coracao.remove();
+    },6000);
+
+},500);
+
+</script>
+
+</body>
+</html>
